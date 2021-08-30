@@ -6,6 +6,7 @@ def flask_path_finder(*args):
     for x in args:
         for y in x:
             if y.lower() == "test":
+                print("Current path:", Path.cwd())
                 print("TEST MODE. TERMINATING SESSION")
                 return
 
