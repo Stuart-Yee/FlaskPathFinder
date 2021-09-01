@@ -12,7 +12,7 @@ def flask_path_finder(*args):
 
     server = open("server.py", "w+")
     server.write(
-"from flask_app.controllers import #controllers go here\nfrom flask_app import app\nif __name__==\"__main__\":\n\tapp.run(debug=True)"
+"from flask_app.controllers import #TODO controllers go here\nfrom flask_app import app\nif __name__==\"__main__\":\n\tapp.run(debug=True)"
 )
     server.close()
     print("Current path:", Path.cwd())
