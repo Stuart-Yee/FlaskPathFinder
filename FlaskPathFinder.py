@@ -55,7 +55,7 @@ def main(*args):
     print(COLOR["GREEN"], "Creating", "__init__.py file", COLOR["ENDC"])
     module_file = open("__init__.py", "w+")
     module_file.write(
-"from flask import Flask\napp = Flask(__name__)\napp.secret_key = \"YOUR SECRET KEY\"\n#TODO Change secret key"
+"from flask import Flask, session\napp = Flask(__name__)\napp.secret_key = \"YOUR SECRET KEY\"\n#TODO Change secret key"
 )
     module_file.close()
 
